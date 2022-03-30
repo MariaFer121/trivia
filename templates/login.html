@@ -1,0 +1,19 @@
+{% extends 'layout.html' %} {% block main %}
+<div class="row mt-5">
+    <div class="col-4 offset-4 m-azul rounded p-4">
+        <h3>Ingrese al Juego</h3>
+        <form method="post" action="/login">
+            <div class="mb-3 form-floating">
+                <input name="email" required type="email" class="form-control" placeholder="nombre@correo.com" autofocus>
+                <label for="floatingInput">Correo</label>
+            </div>
+            <div class="mb-3 form-floating">
+                <input name="password" required type="password" class="form-control" placeholder="Contrase&ntilde;a">
+                <label for="floatingPassword">Contrase&ntilde;a</label>
+            </div>
+            <button type="submit" class="btn btn-dark">Ingresar</button>
+        </form>
+        <a href="/register">Registrarse</a>
+    </div>
+</div>
+{% endblock %}
